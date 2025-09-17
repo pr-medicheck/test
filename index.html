@@ -46,7 +46,7 @@
         .map-container {
             width: 100%;
             max-width: 840px;
-            height: 640px;
+            height: 720px;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -63,7 +63,7 @@
         /* 모바일에서 지도 높이 조정 */
         @media screen and (max-width: 768px) {
             .map-container {
-                height: 400px;
+                height: 640px;
                 margin: 15px auto;
             }
         }
@@ -106,10 +106,9 @@
   <img src="https://pr-medicheck.github.io/test/05-%EC%95%88%EB%82%B4.jpg" alt="안내">
 
   <div class="map-container">
-    <iframe src="https://map.naver.com/v5/embed/place/12237442?c=15,0,0,0,dh" 
+    <iframe src="https://m.place.naver.com/hospital/12237442/location?entry=pll&filter=location&selected_place_id=12237442" 
             allowfullscreen="" 
-            loading="lazy"
-            style="width: 100%; height: 100%; border: none;">
+            loading="lazy">
     </iframe>
 </div>
 
@@ -141,16 +140,10 @@
   <img src="https://pr-medicheck.github.io/test/05-%EC%95%88%EB%82%B4.jpg" alt="안내">
 
   <div class="map-container">
-    <a href="https://map.naver.com/v5/search/한국건강관리협회%20부산동래검진센터/place/12237442?c=14145678.1234567,4334567.1234567,15,0,0,0,dh" 
-       target="_blank" 
-       style="display: block; width: 100%; height: 100%; position: relative;">
-      <iframe src="https://map.naver.com/v5/search/한국건강관리협회%20부산동래검진센터/place/12237442?c=14145678.1234567,4334567.1234567,15,0,0,0,dh" 
-              allowfullscreen="" 
-              loading="lazy"
-              style="pointer-events: none;">
-      </iframe>
-      <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent; cursor: pointer; z-index: 10;"></div>
-    </a>
+    <iframe src="https://m.place.naver.com/hospital/12237442/location?entry=pll&filter=location&selected_place_id=12237442" 
+            allowfullscreen="" 
+            loading="lazy">
+    </iframe>
 </div>
 
 </body>

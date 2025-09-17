@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한국건강관리협회 부산동래검진센터</title>
     <style>
+        /* 전체 이미지 컨테이너 스타일 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        
+        /* 모든 이미지에 적용되는 스타일 */
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+        
+        /* 지도 컨테이너 스타일 */
         .map-container {
             width: 100%;
             max-width: 840px;
@@ -19,42 +38,58 @@
             height: 100%;
             border: none;
         }
+        
+        /* 스크롤 확대/축소 시에도 1단 유지 */
+        @media screen and (max-width: 9999px) {
+            img {
+                display: block !important;
+                width: 100% !important;
+                float: none !important;
+                clear: both !important;
+            }
+        }
     </style>
 </head>
 <body>
 
-  !--01.메인이미지-
+  <!--01.메인이미지-->
+  <img src="https://pr-medicheck.github.io/test/01.jpg" alt="메인 이미지">
+  
+  <!--02.검진문의-->
+  <img src="https://pr-medicheck.github.io/test/02-%EA%B2%80%EC%A7%84%20%EB%AC%B8%EC%9D%98.jpg" alt="검진 문의">
+  
+  <!--03.예약-->
+  <img src="https://pr-medicheck.github.io/test/03-%EC%98%88%EC%95%BD.jpg" alt="예약">
 
-  <img src="https://github.com/pr-medicheck/test/blob/main/01.jpg" alt="메인 이미지">
-  
-  !--02.검진문의-
-  
-  !--03.예약-
-  
-  !--04.상담-
-  
-  !--05.안내-
-  
-  !--06.후킹-
-  
-  !--07.특가-
-  
-  !--08.건강검진 대상-
-  
-  !--09.홍보-
-  
-  !--10.검진문의-
-  
-  !--11.예약-
-  
-  !--12.상담-
-  
-  !--13.안내-
-  
-  
-  <a href="https://연결할_웹사이트_주소.com">
-    <img src="이미지_경로.jpg" alt="이미지 설명">
-  </a>
+  <!--04.상담-->
+  <img src="https://pr-medicheck.github.io/test/04-%EC%83%81%EB%8B%B4.jpg" alt="상담">
+
+  <!--05.안내-->
+  <img src="https://pr-medicheck.github.io/test/05-%EC%95%88%EB%82%B4.jpg" alt="안내">
+
+  <!--06.후킹-->
+  <img src="https://pr-medicheck.github.io/test/06-%ED%9B%84%ED%82%B9.jpg" alt="후킹">
+
+  <!--07.특가-->
+  <img src="https://pr-medicheck.github.io/test/07-%ED%8A%B9%EA%B0%80.jpg" alt="특가">
+
+  <!--08.건강검진 대상-->
+  <img src="https://pr-medicheck.github.io/test/08-%EA%B1%B4%EA%B0%95%EA%B2%80%EC%A7%84%20%EB%8C%80%EC%83%81.jpg" alt="건강검진 대상">
+
+  <!--09.홍보-->
+  <img src="https://pr-medicheck.github.io/test/09-%ED%99%8D%EB%B3%B4.jpg" alt="홍보">
+
+  <!--10.검진문의-->
+  <img src="https://pr-medicheck.github.io/test/02-%EA%B2%80%EC%A7%84%20%EB%AC%B8%EC%9D%98.jpg" alt="검진 문의">
+
+  <!--11.예약-->
+  <img src="https://pr-medicheck.github.io/test/03-%EC%98%88%EC%95%BD.jpg" alt="예약">
+
+  <!--12.상담-->
+  <img src="https://pr-medicheck.github.io/test/04-%EC%83%81%EB%8B%B4.jpg" alt="상담">
+
+  <!--13.안내-->
+  <img src="https://pr-medicheck.github.io/test/05-%EC%95%88%EB%82%B4.jpg" alt="안내">
 
 <div class="map-container">
     <iframe src="https://m.place.naver.com/hospital/12237442/location?entry=pll&filter=location&selected_place_id=12237442" 

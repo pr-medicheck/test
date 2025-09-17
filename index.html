@@ -51,11 +51,21 @@
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             margin: 20px auto;
+            position: relative;
         }
         .map-container iframe {
             width: 100%;
             height: 100%;
             border: none;
+            display: block;
+        }
+        
+        /* 모바일에서 지도 높이 조정 */
+        @media screen and (max-width: 768px) {
+            .map-container {
+                height: 400px;
+                margin: 15px auto;
+            }
         }
         
         /* 스크롤 확대/축소 시에도 1단 유지 */
@@ -96,7 +106,7 @@
   <img src="https://pr-medicheck.github.io/test/05-%EC%95%88%EB%82%B4.jpg" alt="안내">
 
   <div class="map-container">
-    <iframe src="https://m.place.naver.com/hospital/12237442/location?entry=pll&filter=location&selected_place_id=12237442" 
+    <iframe src="https://map.naver.com/v5/embed/place/12237442?c=15,0,0,0,dh" 
             allowfullscreen="" 
             loading="lazy"
             style="width: 100%; height: 100%; border: none;">
